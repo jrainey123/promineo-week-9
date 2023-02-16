@@ -1,0 +1,90 @@
+<!-- Week 9 Coding Assignment - Bootstrap
+[x] Create a NEW website using HTML and Bootstrap. The website must include the following:
+[x] At least 2 pages
+[x] A Bootstrap navbar
+[x] A Bootstrap table
+[x] A Bootstrap form
+[x] Bootstrap grid used throughout to format elements
+[x] Elements should stack vertically when the window is small -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<br>
+<div class="container" style="border:2px solid darkblue;text-align:center">
+  <h1 text-align:>Home Inventory Management</h1> 
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="input.html">Add Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view.html">View Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="report.html">Report Inventory</a>
+          </li> 
+        </ul>
+      </nav>
+<div class="row">
+  <div class="col-sm-4" style="border:2px solid darkblue">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat eum? Repudiandae, impedit, expedita possimus ex illo, maiores quas laborum nesciunt voluptas aut porro repellat eligendi eius sapiente obcaecati ducimus.</p>
+  </div>
+  <div class="col-sm-8" style="border:2px solid darkblue">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Field Name</th>
+            <th>Input Description</th>
+            <th>Input Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item Description</td>
+            <td>Describe the item. Include colors and dimensions if relevant.</td>
+            <td>Text</td>
+          </tr>
+          <tr>
+            <td>Item Acquisition Date</td>
+            <td>Enter the date the item was purchased or otherwise acquired. Include items received as gifts.</td>
+            <td>Date: mm/dd/yyyy</td>
+          </tr>
+          <tr>
+            <td>Item Cost</td>
+            <td>Enter the amount paid in US Dollars to acquire the item.</td>
+            <td>US Currency $</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="border:2px solid darkblue">
+    <img height="150px"src="receipts.jpg">
+    </div>
+    
+    <div class="col-sm-4" style="border:2px solid darkblue">
+    <img height="150px"src="reportlist.png">
+    </div>
+   
+    <div class="col-sm-4" style="border:2px solid darkblue">
+    <img height="150px"src="office.jpg">
+    </div>
+  </div>
+
+</div>   
+</body>
+</html>
